@@ -1,0 +1,46 @@
+<html>
+<head>
+  <title>Firebase Login</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+</head>
+<body>
+
+  <div id="login_div" class="main-div">
+  
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+   var firebaseConfig = {
+    apiKey: "AIzaSyArumjpL9qIKWP5OnTHbxP8evBm5y4HPXo",
+    authDomain: "how2saveh2-online.firebaseapp.com",
+    databaseURL: "https://how2saveh2-online-default-rtdb.firebaseio.com",
+    projectId: "how2saveh2-online",
+    storageBucket: "how2saveh2-online.appspot.com",
+    messagingSenderId: "388965599960",
+    appId: "1:388965599960:web:b56702dbfecca57b8f65ad",
+    measurementId: "G-47BF4FECVF"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  
+  </script>
+  <script src="index.js"></script>
+
+</body>
+</html>
